@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kelas 8D — Modern & Responsive</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar">
+    <div class="nav-inner">
+      <div class="brand">
+        <div class="logo">🎓</div>
+        <span>Kelas 8D</span>
+      </div>
+      <button class="hamb" id="hamb" aria-label="Buka menu">☰</button>
+      <div class="nav-links" id="navLinks" role="navigation">
+        <a href="#home">Beranda</a>
+        <a href="#profil">Profil</a>
+        <a href="#siswa">Siswa</a>
+        <a href="#jadwal">Jadwal</a>
+        <a href="#galeri">Galeri</a>
+        <a href="#kontak">Kontak</a>
+        <button class="nav-cta" onclick="document.getElementById('kontak').scrollIntoView({behavior:'smooth'})">Hubungi Kami</button>
+      </div>
+    </div>
+  </nav>
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="home">
+    <div class="hero-inner">
+      <div>
+        <h1 class="reveal">Selamat Datang di <span id="typing" class="typing"></span></h1>
+        <p class="sub reveal" style="transition-delay:.05s">“Belajar bersama, tumbuh bersama, berprestasi bersama.”</p>
+        <div class="badges reveal" style="transition-delay:.1s">
+          <span class="badge">Disiplin</span>
+          <span class="badge">Kreatif</span>
+          <span class="badge">Kompak</span>
+        </div>
+        <div class="cta-row reveal" style="transition-delay:.15s">
+          <button class="btn primary" onclick="document.getElementById('profil').scrollIntoView({behavior:'smooth'})">Lihat Profil</button>
+          <a class="btn ghost" href="#jadwal">Lihat Jadwal</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ===== PROFIL ===== -->
+  <section class="section" id="profil">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2>Tentang Kelas</h2>
+        <p class="lead">Kelas 8D dikenal solid, aktif, dan penuh inisiatif. Kami percaya karakter yang baik adalah fondasi prestasi.</p>
+      </div>
+      <div class="profile">
+        <div class="card reveal" style="transition-delay:.05s">
+          <ul>
+            <li><span>Wali Kelas</span><strong>Bu lita</strong></li>
+            <li><span>Jumlah Siswa</span><strong>32 (16 putra • 16 putri)</strong></li>
+            <li><span>Ketua Kelas</span><strong>Sherly</strong></li>
+            <li><span>Wakil Ketua</span><strong>Arjuna</strong></li>
+            <li><span>Motto</span><strong>“Integritas • Kolaborasi • Prestasi”</strong></li>
+          </ul>
+        </div>
+        <div class="hero-visual reveal" style="transition-delay:.1s">
+        <div class="hero-card">
+          <img src="https://files.catbox.moe/do2itt.jpg" alt="Ilustrasi belajar" />
+          <div>
+            <div style="font-weight:700">Lita Noviana Wulan</div>
+            <div style="color:var(--muted); font-size:14px">Jumlah siswa: 32 • Ketua kelas: Sherly</div>
+          </div>
+        </div>
+      </div>
+        <div class="image reveal" style="transition-delay:.1s">
+          <!-- Ganti src ini dengan foto kelas kalian -->
+          <img src="galeri/khusus.jpg" alt="Foto Kegiatan Kelas" />
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ===== SISWA ===== -->
+  <section class="section" id="siswa">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2>Daftar Siswa</h2>
+        <p class="lead">Beberapa siswa perwakilan. Tambahkan semua nama dengan mudah pada template ini.</p>
+      </div>
+      <div class="grid students">
+        <!-- Duplikasi .student sesuai kebutuhan -->
+        <div class="student reveal">
+          <img src="foto_siswa/01.jpg" alt="Foto siswa">
+          <div>
+            <div class="name">Adilah Asegaf</div>
+            <div class="meta">No Absen: 01</div>
+          </div>
+        </div>
+        <div class="student reveal">
+          <img src="foto_siswa/02.jpg" alt="Foto siswa">
+          <div>
+            <div class="name">Adzkya Hafsa SKU.</div>
+            <div class="meta">No Absen: 02</div>
+          </div>
+        </div>
+        <div class="student reveal">
+          <img src="foto_siswa/03.jpg" alt="Foto siswa">
+          <div>
+            <div class="name">Aida Sherly Cristianti</div>
+            <div class="meta">No Absen: 03</div>
+          </div>
+        </div>
+        <div class="student reveal">
+          <img src="foto_siswa/04.jpg" alt="Foto siswa">
+          <div>
+            <div class="name">Al Ridho Romadhon</div>
+            <div class="meta">No Absen: 04</div>
+          </div>
+        </div>
+        <div class="student reveal">
+          <img src="foto_siswa/05.jpg" alt="Foto siswa">
+          <div>
+            <div class="name">Amelia Cahaya Alam</div>
+            <div class="meta">No Absen: 05</div>
+          </div>
+        </div>
+        <div class="student reveal">
+          <img src="foto_siswa/06.jpg" alt="Foto siswa">
+          <div>
+            <div class="name">Anisa Hasna Nabila</div>
+            <div class="meta">No Absen: 06</div>
+          </div>
+        </div>
+        <div class="student reveal">
+          <img src="foto_siswa/07.jpg" alt="Foto siswa">
+          <div>
+            <div class="name">Aqila Nara Pradnya P.</div>
+            <div class="meta">No Absen: 07</div>
+          </div>
+        </div>
+        <div class="student reveal">
+          <img src="foto_siswa/08.jpg" alt="Foto siswa">
+          <div>
+            <div class="name">Aqueena Cesarnian P.</div>
+            <div class="meta">No Absen: 08</div>
+          </div>
+        </div>
+        <div class="student reveal">
+          <img src="foto_siswa/09.jpg" alt="Foto siswa">
+          <div>
+            <div class="name">Arjuna Kurniawan</div>
+            <div class="meta">No Absen: 09</div>
+          </div>
+        </div>
+        <div class="student reveal">
+          <img src="foto_siswa/10.jpg" alt="Foto siswa">
+          <div>
+            <div class="name">Arnelitha Shiva PK.</div>
+            <div class="meta">No Absen: 10</div>
+          </div>
+        </div>
+        <div class="student reveal">
+          <img src="foto_siswa/11.jpg" alt="Foto siswa">
+          <div>
+            <div class="name">Bagas Satyanegara.</div>
+            <div class="meta">No Absen: 11</div>
+          </div>
+        </div>
+        <div class="student reveal">
+          <img src="foto_siswa/12.jpg" alt="Foto siswa">
+          <div>
+            <div class="name">Dicky Permana</div>
+            <div class="meta">No Absen: 12</div>
+          </div>
+        </div>
+        <div class="student reveal">
+          <img src="foto_siswa/13.jpg" alt="Foto siswa">
+          <div>
+            <div class="name">Erlamecita Kania Viragusta</div>
+            <div class="meta">No Absen: 13</div>
+          </div>
+        </div>
+        <div class="student reveal">
+          <img src="foto_siswa/14.jpg" alt="Foto siswa">
+          <div>
+            <div class="name">Fadli Yasir Alfariz</div>
+            <div class="meta">No Absen: 14</div>
+          </div>
+        </div>
+        <div class="student reveal">
+          <img src="foto_siswa/15.jpg" alt="Foto siswa">
+          <div>
+            <div class="name">Faeyza Raqila Tsaqib</div>
+            <div class="meta">No Absen: 15</div>
+          </div>
+        </div>
+        <div class="student reveal">
+          <img src="foto_siswa/16.jpg" alt="Foto siswa">
+          <div>
+            <div class="name">Felita Eustacia Najla</div>
+            <div class="meta">No Absen: 16</div>
+          </div>
+        </div>
+        <div class="student reveal">
+          <img src="foto_siswa/17.jpg" alt="Foto siswa">
+          <div>
+            <div class="name">Firista Zaki Auliya</div>
+            <div class="meta">No Absen: 17</div>
+          </div>
+        </div>
+        <div class="student reveal">
+          <img src="foto_siswa/18.jpg" alt="Foto siswa">
+          <div>
+            <div class="name">Ivan Zaki Prasetyo</div>
+            <div class="meta">No Absen: 18</div>
+          </div>
+        </div>
+        <div class="student reveal">
+          <img src="foto_siswa/19.jpg" alt="Foto siswa">
+          <div>
+            <div class="name">Kanaya Sabila Ramadhani</div>
+            <div class="meta">No Absen: 19</div>
+          </div>
+        </div>
+        <div class="student reveal">
+          <img src="foto_siswa/20.jpg" alt="Foto siswa">
+          <div>
+            <div class="name">Mahira Emilia Lavania</div>
+            <div class="meta">No Absen: 20</div>
+          </div>
+        </div>
+        <div class="student reveal">
+          <img src="foto_siswa/21.jpg" alt="Foto siswa">
+          <div>
+            <div class="name">Marsya Ananda PL.</div>
+            <div class="meta">No Absen: 21</div>
+          </div>
+        </div>
+        <div class="student reveal">
+          <img src="foto_siswa/22.jpg" alt="Foto siswa">
+          <div>
+            <div class="name">Muhammad Aji ahlul I.</div>
+            <div class="meta">No Absen: 22</div>
+          </div>
+        </div>
+        <div class="student reveal">
+          <img src="foto_siswa/23.jpg" alt="Foto siswa">
+          <div>
+            <div class="name">Muhammad Kenzie Alfarel</div>
+            <div class="meta">No Absen: 23</div>
+          </div>
+        </div>
+        <div class="student reveal">
+          <img src="foto_siswa/24.jpg" alt="Foto siswa">
+          <div>
+            <div class="name">Raditya Candra P.</div>
+            <div class="meta">No Absen: 24</div>
+          </div>
+        </div>
+        <div class="student reveal">
+          <img src="foto_siswa/25.jpg" alt="Foto siswa">
+          <div>
+            <div class="name">Raka Ade Maulana</div>
+            <div class="meta">No Absen: 25</div>
+          </div>
+        </div>
+        <div class="student reveal">
+          <img src="foto_siswa/26.jpg" alt="Foto siswa">
+          <div>
+            <div class="name">Rendra Wahyu Saputra</div>
+            <div class="meta">No Absen: 26</div>
+          </div>
+        </div>
+        <div class="student reveal">
+          <img src="foto_siswa/27.jpg" alt="Foto siswa">
+          <div>
+            <div class="name">Salwa Athania NB.</div>
+            <div class="meta">No Absen: 27</div>
+          </div>
+        </div>
+        <div class="student reveal">
+          <img src="foto_siswa/28.jpg" alt="Foto siswa">
+          <div>
+            <div class="name">Tirta Surya Wiguna</div>
+            <div class="meta">No Absen: 28</div>
+          </div>
+        </div>
+        <div class="student reveal">
+          <img src="foto_siswa/29.jpg" alt="Foto siswa">
+          <div>
+            <div class="name">Tristan Rizkiano</div>
+            <div class="meta">No Absen: 29</div>
+          </div>
+        </div>
+        <div class="student reveal">
+          <img src="foto_siswa/30.jpg" alt="Foto siswa">
+          <div>
+            <div class="name">Vivian Riana Putri</div>
+            <div class="meta">No Absen: 30</div>
+          </div>
+        </div>
+        <div class="student reveal">
+          <img src="foto_siswa/31.jpg" alt="Foto siswa">
+          <div>
+            <div class="name">Zaki Najmullail</div>
+            <div class="meta">No Absen: 31</div>
+          </div>
+        </div>
+        <div class="student reveal">
+          <img src="foto_siswa/32.jpg" alt="Foto siswa">
+          <div>
+            <div class="name">Zidan Faiz Rahman</div>
+            <div class="meta">No Absen: 32</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ===== JADWAL ===== -->
+  <section class="section" id="jadwal">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2>Jadwal Pelajaran</h2>
+        <p class="lead">Klik hari untuk melihat jadwal. Panel akan muncul dengan animasi halus.</p>
+      </div>
+      <div class="tabs reveal" role="tablist">
+        <button class="tab active" data-day="senin" role="tab" aria-selected="true">Senin</button>
+        <button class="tab" data-day="selasa" role="tab">Selasa</button>
+        <button class="tab" data-day="rabu" role="tab">Rabu</button>
+        <button class="tab" data-day="kamis" role="tab">Kamis</button>
+        <button class="tab" data-day="jumat" role="tab">Jumat</button>
+      </div>
+      <div id="panel-senin" class="panel active" role="tabpanel" aria-labelledby="senin">
+        <table>
+          <tr>
+            <th>Waktu</th>
+            <th>Mata Pelajaran</th>
+            <th>Guru</th>
+          </tr>
+          <tr>
+            <td>07:55 - 08:36</td>
+            <td>B Ing</td>
+            <td>Pak Darwanto</td>
+          </tr>
+          <tr>
+            <td>08:36 - 09:55</td>
+            <td>Informatika</td>
+            <td>Bu Ratna</td>
+          </tr>
+          <tr>
+            <td>10:10 - 11:30</td>
+            <td>Matematika</td>
+            <td>Bu Kurnia</td>
+          </tr>
+          <tr>
+            <td>11:30 - 13:40</td>
+            <td>Prakarya</td>
+            <td>Bu Erna</td>
+          </tr>
+          <tr>
+            <td>13:40 - 15:00</td>
+            <td>Bk</td>
+            <td>Bu kati</td>
+          </tr>
+        </table>
+      </div>
+      <div id="panel-selasa" class="panel" role="tabpanel" hidden>
+        <table>
+          <tr>
+            <th>Waktu</th>
+            <th>Mata Pelajaran</th>
+            <th>Guru</th>
+          </tr>
+          <tr>
+            <td>07:15 - 08:35</td>
+            <td>IPS</td>
+            <td>Bu Rositawati</td>
+          </tr>
+          <tr>
+            <td>08:35 - 09:55</td>
+            <td>Bahasa Inggris</td>
+            <td>Pak Darwanto</td>
+          </tr>
+          <tr>
+            <td>10:10 - 11:30</td>
+            <td>Pjok</td>
+            <td>Pak Rinto</td>
+          </tr>
+          <tr>
+            <td>11:30 - 13:40</td>
+            <td>Matematika</td>
+            <td>Bu kurnia</td>
+          </tr>
+          <tr>
+            <td>13:40 - 15:00</td>
+            <td>IPA</td>
+            <td>Bu putie</td>
+          </tr>
+        </table>
+      </div>
+      <div id="panel-rabu" class="panel" role="tabpanel" hidden>
+        <table>
+          <tr>
+            <th>Waktu</th>
+            <th>Mata Pelajaran</th>
+            <th>Guru</th>
+          </tr>
+          <tr>
+            <td>07:15 - 15:00</td>
+            <td>P5</td>
+            <td>semua</td>
+          </tr>
+        </table>
+      </div>
+      <div id="panel-kamis" class="panel" role="tabpanel" hidden>
+        <table>
+          <tr>
+            <th>Waktu</th>
+            <th>Mata Pelajaran</th>
+            <th>Guru</th>
+          </tr>
+          <tr>
+            <td>07:15 - 09:15</td>
+            <td>B indo</td>
+            <td>Bu lita</td>
+          </tr>
+          <tr>
+            <td>09:15 - 09:55</td>
+            <td>IPS</td>
+            <td>Bu Rositawati</td>
+          </tr>
+          <tr>
+            <td>10:10 - 11:30</td>
+            <td>Agama</td>
+            <td>Pak Suripta</td>
+          </tr>
+          <tr>
+            <td>11:30 - 13:40</td>
+            <td>IPA</td>
+            <td>Bu putie</td>
+          </tr>
+          <tr>
+            <td>13:40 - 15:00</td>
+            <td>PPKN</td>
+            <td>Bu desi p</td>
+          </tr>
+        </table>
+      </div>
+      <div id="panel-jumat" class="panel" role="tabpanel" hidden>
+        <table>
+          <tr>
+            <th>Waktu</th>
+            <th>Mata Pelajaran</th>
+            <th>Guru</th>
+          </tr>
+          <tr>
+            <td>08:35 - 09:55</td>
+            <td>B jawa</td>
+            <td>Bu hastuti</td>
+          </tr>
+          <tr>
+            <td>10:10 - 11:30</td>
+            <td>B indo</td>
+            <td>Bu Lita</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </section>
+  <!-- ===== GALERI ===== -->
+  <section class="section" id="galeri">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2>Galeri Kegiatan</h2>
+        <p class="lead">Dokumentasi momen terbaik kami, dari kelas hingga kompetisi.</p>
+      </div>
+      <div class="grid gallery">
+        <img class="reveal" src="galeri/foto1.jpg" alt="Kegiatan 1">
+        <img class="reveal" src="galeri/foto2.jpg" alt="Kegiatan 2">
+        <img class="reveal" src="galeri/foto3.jpg" alt="kegiatan 3">
+        <img class="reveal" src="galeri/foto4.jpg" alt="kegiatan 4">
+        <img class="reveal" src="galeri/foto5.jpg" alt="kegiatan 5">
+        <img class="reveal" src="galeri/foto6.jpg" alt="kegiatan 6">
+        <img class="reveal" src="galeri/foto7.jpg" alt="kegiatan 7">
+        <img class="reveal" src="galeri/foto8.jpg" alt="kegiatan 8">
+        <img class="reveal" src="galeri/foto9.jpg" alt="kegiatan 9">
+        <img class="reveal" src="galeri/foto10.jpg" alt=" kegiatan 10">
+        <img class="reveal" src="galeri/foto11.jpg" alt="kegiatan 11">
+        <img class="reveal" src="galeri/foto12.jpg" alt="kegiatan 12">
+      </div>
+    </div>
+  </section>
+  <section class="section" id="kontak">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2>Kontak</h2>
+        <p class="lead">Hubungi kami untuk kolaborasi, informasi, atau saran.</p>
+      </div>
+      <div class="contact">
+        <!-- FORM KONTAK -->
+        <div class="card reveal" style="transition-delay:.05s">
+          <form action="https://api.web3forms.com/submit" method="POST">
+
+            <!-- Access Key -->
+            <input type="hidden" name="access_key" value="ca2a9ff2-cc8e-4f9a-aa98-74bf5fe389ed">
+
+            <!-- Honeypot anti spam (Opsional tapi bagus) -->
+            <input type="checkbox" name="botcheck" style="display:none;">
+
+            <label>Nama</label>
+            <input 
+              type="text" 
+              name="Nama" 
+              placeholder="Nama kamu" 
+              required 
+              style="width:100%; padding:12px; border-radius:10px; border:1px solid #e5e7eb; margin:6px 0 12px"
+            />
+
+            <label>Email</label>
+            <input 
+              type="email" 
+              name="Email" 
+              placeholder="Email kamu" 
+              required 
+              style="width:100%; padding:12px; border-radius:10px; border:1px solid #e5e7eb; margin:6px 0 12px"
+            />
+
+            <label>Pesan</label>
+            <textarea 
+              name="Pesan" 
+              placeholder="Tulis pesan di sini" 
+              rows="4" 
+              required 
+              style="width:100%; padding:12px; border-radius:10px; border:1px solid #e5e7eb; margin:6px 0 12px"
+            ></textarea>
+
+            <!-- Redirect after submit -->
+            <input type="hidden" name="redirect" value="https://rakaademaulana.github.io/Terimakasih/">
+
+            <button class="btn primary" type="submit" style="width:100%">Kirim</button>
+          </form>
+        </div>
+
+        <!-- INFO KONTAK -->
+        <div class="card reveal" style="transition-delay:.1s">
+          <h3 style="margin-top:0">Info Cepat</h3>
+          <p style="color:var(--muted)">
+            • Email: kelasnya8delapand@gmail.com<br>
+            • Instagram: <a href="https://www.instagram.com/8dangdutssasoyyyy?igsh=MWJ6dTlxdjZ0MHRjMQ==" target="_blank">@8dangdutssasoyyyy</a><br>
+            • WhatsApp: <a href="https://wa.me/628123456789" target="_blank">+62 812-3456-789</a>
+          </p>
+          <a class="btn ghost" href="https://wa.me/628123456789" target="_blank">Chat Ngl</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ===== FOOTER ===== -->
+    <footer>
+    <p>&copy; 2025 Kelas 8D. Semua Hak Dilindungi.</p>
+    <p>Created by Raka ade maulana</p>
+  </footer>
+  <script src="script.js"</script>
+</body>
+</html>
